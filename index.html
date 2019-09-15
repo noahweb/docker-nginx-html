@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <!-- ####### FRAME HEADER ####### -->
+    <nav class="fixed-nav-bar">
+        <!--<img src="assets/cloud-solid.svg" id="logo-pic">-->
+        <a href="#home-container" class="logo">CloudIUS</a>
+        <ul class="nav-list">
+            <li>
+                <a class="active" href="#home-container"><span class="nav-linktext">Home</span></a>
+            </li>
+
+            <li>
+                <a href="#section-details"><span class="nav-linktext">Details</span></a>
+            </li>
+
+            <li>
+                <a href="#section-pricing"><span class="nav-linktext">Pricing</span></a>
+            </li>
+
+            <li>
+                <a href="#home-container"><span class="nav-linktext">Sign up</span></a>
+            </li>
+
+            <li class="nav-button-style">
+                <a href="#sign-in" id="nav-sign-in"><span class="nav-linktext">Sign in</span></a>
+            </li>
+
+        </ul>
+    </nav><!-- ####### FRAME BODY ####### -->
+    <main class="siteFrame-body">
+
+
+        <!-- ------- HOME ------- -->
+        <div id="home-container">
+            <div class="home-grid">
+                <div class="about-container">
+                    <div class="about-title-container">
+                        <h1 class="about-title">CloudIUS</h1>
+                        <p class="about-description">The leader in cloud hosting solutions for particulars and professionnals.</p>
+                    </div>
+                </div>
+                <div class="home-links-container">
+                    <div class="home-links">
+                        <a href="#" id="home-links-doc">Documentation</a></div>
+                    <div class="home-links">
+                        <a href="#" id="home-links-demo">Demonstration</a></div>
+                </div>
+
+                <div id="sign-container">
+                    <form class="sign-form" name="SignUp" method="post">
+                        <div class="sign-box">
+                            <h2 class="sign-title">Sign up</h2>
+                            <div class="sign-box-item">
+                                <input type="text" placeholder="Your name" name="user_name" id="sign-name" required>
+                            </div>
+
+                            <div class="sign-box-item">
+                                <input type="email" placeholder="Email address" name="user_email" id="sign-email" required>
+                            </div>
+
+                            <div class="sign-box-item">
+                                <input type="password" placeholder="Create a password" name="user_password" id="sign-password" required>
+                            </div>
+
+                            <div class="sign-box-item">
+                                <button type="submit" name="sign-submit" id="sign-button">Create your account</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- -------- DETAILS ------- -->
+        <section id="section-details">
+            <div class="details-title-container">
+                <h2 class="details-title">Details</h2>
+                <p class="details-description">description</p>
+            </div>
+
+            <div class="details-content-container">
+                <div class="details-grid">
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Scalability</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Availability</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Monitoring</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Security</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Flexibility</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+
+                    <div class="details-item">
+                        <div class="details-item-top">
+                            <div class="details-item-logo"></div>
+                            <div class="details-item-title">
+                                <h3>Rapidity</h3>
+                            </div>
+                        </div>
+                        <div class="details-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ------- PRICING ------- -->
+        <section id="section-pricing">
+            <div class="pricing-title-container">
+                <h2 class="pricing-title">Pricing</h2>
+                <p class="pricing-description">Choose the formula that better suits your needs and upgrade it at any times.</p>
+            </div>
+            <div class="container-pricing">
+                <div class="box-pricing">
+                    <div class="box-pricing-title">Free</div>
+                    <div class="box-pricing-price">0$/month</div>
+                    <div class="box-pricing-details">
+                        <ul>
+                            <li class="pricing-feature-visible">
+                                Feature one
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature two
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature three
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature four
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature five
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature six
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature seven
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-button">
+                        <form id="formular">
+                            <button type="submit" name="select" value="free">Select</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="box-pricing">
+                    <div class="box-pricing-title">Basic</div>
+                    <div class="box-pricing-price">4.99$/month</div>
+                    <div class="box-pricing-details">
+                        <ul>
+                            <li class="pricing-feature-visible">
+                                Feature one
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature two
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature three
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature four
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature five
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature six
+                            </li>
+                            <li class="pricing-feature-invisible">
+                                Feature seven
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-button">
+                        <form id="formular">
+                            <button type="submit" name="select" value="basic">Select</button>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="box-pricing">
+                    <div class="box-pricing-title">Premium</div>
+                    <div class="box-pricing-price">12.99$/month</div>
+                    <div class="box-pricing-details">
+                        <ul>
+                            <li class="pricing-feature-visible">
+                                Feature one
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature two
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature three
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature four
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature five
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature six
+                            </li>
+                            <li class="pricing-feature-visible">
+                                Feature seven
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-button">
+                        <form id="formular">
+                            <button type="submit" name="select" value="premium">Select</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ####### FRAME FOOTER ####### -->
+    <footer id="siteFrame-footer">
+        <div class="footer-container">
+            <p>An educational project from <a href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page">freeCodeCamp</a></p>
+        </div>
+    </footer>
+</body></html>

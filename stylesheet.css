@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(#735287, #D87C6F); 
+}
+
+html{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-nav-bar{
+    /*background-color: darkgray;*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 0px 10px 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+}
+
+.nav-list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-list li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.nav-list a, 
+.logo{
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-list a:hover{
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    animation-name:zoom;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.nav-button-style {
+    /*background-color: beige;*/
+    background-color: #F0DCD2;
+    border-radius: 5px;
+}
+
+.nav-button-style:hover{
+    background-color: #735287;
+    color: white;
+    border: 2px #fff solid;
+}
+
+#nav-sign-in {
+    color: #735287;
+}
+
+#nav-sign-in:hover{
+    color: white;
+}
+
+#sign-in:hover{
+    color: white;
+}
+
+.logo{
+    /*font-family: Impact, Charcoal, sans-serif;*/
+    /*font-family: "Arial black", gadget, sand-serif;*/
+    font-size: 1.5em;
+}
+
+.siteFrame-body {
+    /*background-color: grey;*/
+    margin-top: 70px;
+}
+
+#home-container {
+    display: flex;
+    /*background-color: crimson;*/
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.home-grid {
+    max-width: 85%;
+    margin-top: 70px;
+    padding: 2em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "about sign"
+        "links sign";
+    vertical-align: middle;
+}
+
+.about-container {
+    /*background-color:bisque;*/
+    grid-area: about;
+    margin: 10px;
+    padding: 20px;
+    align-self: end;
+    justify-self: center;
+    color: white;
+}
+
+.about-title {
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+.about-description {
+    font-size: 1.5em;
+}
+
+
+#home-links-doc,
+#home-links-demo {
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: .3em .5em .3em .5em;
+    margin: 0em .3em 0em .5em;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
+#home-links-doc:hover,
+#home-links-demo:hover {
+    background-color: white;
+    color: #735287;
+}
+
+.home-links-container {
+    display: flex;
+    grid-area: links;
+    align-self: center;
+    justify-self: center;
+    /*background-color: cornflowerblue;*/
+}
+
+#sign-container {
+    /*background-color: azure;*/
+    background-color: #F0DCD2;
+    opacity: .9;
+    grid-area: sign;
+    justify-self: center;
+    padding: .5em;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.sign-box {
+    /*background-color: aqua;*/
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em .5em 1em .5em;
+    
+}
+
+.sign-box-item {
+    font-size: 1em;
+    margin: 5px;
+    flex: 1;
+    width: 100%;
+    
+}
+
+input {
+    display: block;
+    padding: .8em;
+    border-radius: 5px;
+    border: 1px #d9d8d8 solid;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#sign-button {
+    font-size: 1em;
+    padding: .6em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #735287;
+    color: white;
+}
+
+#section-details {
+    /*background-color: chartreuse;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 2em 4em 2em;
+    min-height: 100vh;
+    color: white;
+}
+
+#logo-pic {
+    height: 75%;
+    
+}
+
+.about-description {
+    font-size: 
+}
+
+.sign-title {
+    color: #735287;
+    margin-bottom: .3em;
+    font-size: 2em;
+}
+
+@media (max-width: 900px) {
+    .home-grid {
+        grid-template-columns: 70% 30%;
+        grid-template-areas:
+            "about links"
+            "sign sign";
+    }
+    
+    #sign-container {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    
+    .home-links-container {
+        display: flex;
+        flex-direction: column;
+        align-self: center;        
+    }
+    
+    .home-links {
+        margin-top: .8em;
+        margin-bottom: .8em;
+    }
+}
+
+@media (min-width: 1400px) {
+    .home-grid {
+        width: 1190px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #home-container {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    .home-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 10% 55%;
+        grid-template-areas: 
+            "about"
+            "links"
+            "sign";
+        padding: 0;
+    }
+    
+    #sign-container {
+        width: 100%;
+        margin-top: 1.5em;
+    }
+    
+    .home-links-container{
+        flex-direction: row;
+    }
+    
+    .home-links {
+        flex-basis: 50%;
+    }
+}
+
+.details-title-container {
+    margin-top: 70px;
+    padding: 10px;
+    text-align: center;
+}
+
+.details-title{
+    font-size: 3em;
+}
+
+.details-description {
+    font-size: 1.3em;
+    padding: .5em;
+    margin-bottom: 2em;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1em 1em;
+    grid-column-gap: .5em;
+}
+
+.details-item {
+    /*background-color: darkseagreen;*/
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-item-top {
+    /*background-color: aquamarine;*/
+    padding: .3em;
+}
+
+.details-item-description {
+    /*background-color: blueviolet;*/
+    padding: .3em;
+}
+
+@media all and (min-width: 650px) {
+    .details-grid {
+        grid-gap: 2em 2em; 
+        margin: auto;
+        max-width: 75%;
+    }
+        .details-item-top {
+        font-size: 1.5em;
+    }
+    
+    .details-item-despcrition {
+        font-size: 2em;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .details-grid {
+        grid-template-columns: 33% 33% 33%;
+        grid-gap: 2em 2em; 
+        margin: auto;
+        max-width: 1200px;
+    }
+}
+
+
+#section-pricing {
+    /*background-color: firebrick;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6em 2em 4em 2em;
+    min-height: 100vh;
+    color: white;
+}
+
+.pricing-title-container {
+    text-align: center;
+}
+
+.pricing-title{
+    font-size: 3em;
+}
+
+.pricing-description {
+    font-size: 1.3em;
+    padding: .5em;
+}
+
+.container-pricing {
+    /*background-color: antiquewhite;*/
+    padding: .8em;
+    width: 100%;
+    display: flex;
+}
+
+.box-pricing {
+    /*background-color: #6b83ad;*/
+    background-color: #b78c7a;
+    flex: 1;
+    margin: 1em;
+    padding: .5em;;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-pricing-title {
+    background-color: #F0DCD2;
+    padding: .4em;
+    font-size: 1.6em;
+    text-align: center;
+    color: black;
+}
+
+.box-pricing-price {
+    background-color: #F0DCD2;
+    padding: .3em;
+    font-size: 1.4em;
+    text-align: center;
+    color: black;
+}
+
+.box-pricing-details {
+    /*background-color: #519f9f;*/
+    background-color: #747275;
+    padding: 10px 0px 10px 0px;
+}
+
+li {
+    margin: .3em; 
+}
+
+.box-button button {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: .7em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #F0DCD2;
+}
+
+.box-button {
+    box-sizing: border-box;
+    margin-top: .2em;
+    max-width: 100%;
+}
+
+form {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.pricing-feature-invisible {
+    opacity: .3;
+}
+
+@media only screen and (max-width: 900px) {
+    #section-pricing {
+        padding: 2em 0em 4em 0em;
+    }
+    
+    .container-pricing {
+        padding: .8em 0em .8em 0em;
+        flex-direction: column;
+        max-width: 80%;
+        margin: auto;
+    }
+    
+    .box-pricing {
+        margin-bottom: 1em;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .container-pricing {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+#siteFrame-footer {
+    /*background-color: black;*/
+    padding: 2em;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container a {
+    list-style-type: none;
+    color: white;
+}
